@@ -33,7 +33,7 @@
 
 \begin{document}
 
-\NewDocumentCommand{\daterange}{mmo}{\subsection*{#1}\hfill#2\IfValueT{#3}{ -- #3}}
+\NewDocumentCommand{\entrywithrightfloating}{mmo}{\subsection*{#1}\hfill#2\IfValueT{#3}{ -- #3}}
 
 \newcommand{\sectioncolor}[2]{\colorlet{rule_color}{#2}\section*{#1}}
 
@@ -43,42 +43,41 @@
   \Large \textbf{Jason (Pinran) Cheng}
 
   \normalsize
-  \href{tel:+1-669-264-7155}{(669) 264-7155} |
-  \href{mailto:jasoncheng224+work@gmail.com}{jasoncheng224+work@gmail.com} |
-  \href{https://www.linkedin.com/in/pinran-cheng/}{linkedin.com/in/pinran-cheng} |
-  \href{https://github.com/jc65536}{github.com/jc65536} |
-  \href{https://pcheng.cc/}{pcheng.cc}
+  \href{tel:+1-669-264-7155}{(669) 264-7155}
+  | \href{mailto:jasoncheng224+work@gmail.com}{jasoncheng224+work@gmail.com}
+  | \href{https://www.linkedin.com/in/pinran-cheng/}{linkedin.com/in/pinran-cheng}
+  | \href{https://github.com/jc65536}{github.com/jc65536}
+  % | \href{https://pcheng.cc/}{pcheng.cc}
 \end{center}
-
-\sectioncolor{Education}{gold}
-
-\daterange{Computer Science M.S.}{09/2025}[06/2027]
-
-University of California, Los Angeles / Los Angeles, CA
-
-\daterange{Computer Science B.S., Mathematics minor}{09/2021}[06/2025]
-
-University of California, Los Angeles / Los Angeles, CA
-
-\begin{itemize}
-  \item GPA: 3.95
-
-  \item
-  Coursework: AI, deep learning, computer vision, database systems, operating
-  systems, computer networks, quantum algorithms, compiler construction, data
-  structures/algorithms, digital signal processing
-
-  % \item
-  % Extracurriculars: Upsilon Pi Epsilon Advocacy Chair (2 years), Association of
-  % Computing Machinery Rustaceans Initiative officer (1 year), Head Learning
-  % Assistant (1 year)
-\end{itemize}
-
-% \daterange{Piedmont Hills High School / San Jose, CA}{09/2017}[06/2021]
 
 \sectioncolor{Experience}{blue}
 
-\daterange{Data Lake Software Engineering Intern}{06/2024}[09/2024]
+\entrywithrightfloating{Software Engineer, Java Platform}{10/2025}[present]
+
+Uber / Sunnyvale, CA
+
+\begin{itemize}
+  \item
+  \textbf{Keywords:} developer platform, JVM optimization, compute efficiency,
+  agentic software factory
+
+  \item
+  Designed Leyden Ahead-of-Time compilation pipeline and onboarded top
+  compute-heavy Java services, reducing CPU throttling by 90\%, service startup
+  time by \textasciitilde 1 min, and initial P99 request latency by
+  \textasciitilde 20\%
+
+  \item
+  Developed zero-code context propagation using bytecode manipulation, onboarded
+  1000+ Java services, and owned edge case fixes that unblocked critical efforts
+  like auth token propagation and request tracing
+
+  \item
+  Centralized service startup script, JDK patch/build pipelines, and startup A/B
+  testing framework, streamlining Java development/testing for agentic workflows
+\end{itemize}
+
+\entrywithrightfloating{Data Lake Software Engineering Intern}{06/2024}[09/2024]
 
 Recursion / Salt Lake City, UT
 
@@ -88,18 +87,19 @@ Recursion / Salt Lake City, UT
 
   \item
   Developed a data quality solution to ensure data validation, freshness, and
-  schema consistency, saving over \$1000/month compared to using paid platforms.
+  schema consistency, saving over \$1000/month vs. third-party platforms like
+  Soda Cloud
 
   \item
   Improved data quality observability by integrating with Atlan data catalog to
   display real-time, searchable data reports
 
   \item
-  Expanded upon Soda's data quality DSL, adding useful commands such as schema
+  Expanded upon Soda's data quality DSL, adding commands such as schema
   consistency
 \end{itemize}
 
-\daterange{Fullstack Software Staff}{10/2021}[09/2024]
+\entrywithrightfloating{Fullstack Software Staff}{10/2021}[09/2024]
 
 Daily Bruin / Los Angeles, CA
 
@@ -121,41 +121,75 @@ Daily Bruin / Los Angeles, CA
   per quarter
 \end{itemize}
 
-\daterange{VxWorks Intern}{06/2023}[09/2023]
+% \entrywithrightfloating{VxWorks Intern}{06/2023}[09/2023]
 
-Wind River / Alameda, CA \hfill 06/2022 -- 09/2022
+% Wind River / Alameda, CA \hfill 06/2022 -- 09/2022
+
+% \begin{itemize}
+%   \item
+%   \textbf{Keywords:} software testing, operating systems, message queues, C
+
+%   \item
+%   Implemented POSIX-compliant pthread APIs in C and ported Transport-Independent
+%   RPC library to VxWorks
+
+%   \item
+%   Tested VxWorks' message queue component and achieved 100\% MC/DC for attaining
+%   aerospace systems certification
+% \end{itemize}
+
+\sectioncolor{Education}{gold}
+
+\entrywithrightfloating{Computer Science M.S.}{09/2025}[06/2027]
+
+University of California, Los Angeles / Los Angeles, CA
+
+\entrywithrightfloating{Computer Science B.S., Mathematics minor}{09/2021}[06/2025]
+
+University of California, Los Angeles / Los Angeles, CA
 
 \begin{itemize}
-  \item
-  \textbf{Keywords:} software testing, operating systems, message queues, C
+  \item GPA: 3.95
 
-  \item
-  Implemented POSIX-compliant pthread APIs in C and ported Transport-Independent
-  RPC library to VxWorks
+  % \item
+  % Coursework: AI, deep learning, computer vision, database systems, operating
+  % systems, computer networks, quantum algorithms, compiler construction, data
+  % structures/algorithms, digital signal processing
 
-  \item
-  Tested VxWorks' message queue component and achieved 100\% MC/DC for attaining
-  aerospace systems certification
+  % \item
+  % Extracurriculars: Upsilon Pi Epsilon Advocacy Chair (2 years), Association of
+  % Computing Machinery Rustaceans Initiative officer (1 year), Head Learning
+  % Assistant (1 year)
 \end{itemize}
+
+% \entrywithrightfloating{Piedmont Hills High School / San Jose, CA}{09/2017}[06/2021]
 
 \sectioncolor{Projects}{green}
 
-% \daterange{Quantum simulator on Trainium}{}
+% \entrywithrightfloating{Quantum simulator on Trainium}{}
 % \begin{itemize}
 %   \item
 %   Developed a quantum circuit simulator using NKI kernels on AWS Trainium.
 %   Implemented algorithms like 1M complex matrix multiplication.
 % \end{itemize}
 
-\daterange{Rust computational genomics library}{\url{https://github.com/jc65536/cs-c122}}
+\entrywithrightfloating{Advanced memory dependence prediction in gem5 simulator}{\url{https://github.com/jc65536/cs-251a}}
 
 \begin{itemize}
   \item
-  Implemented Burrow-Wheeler Transform, bloom filters, read mapping, genome
+  Implemented Phast memory dependence predictor and benchmarked it against the
+  store sets predictor, achieving over 500$\times$ reduction in store conflicts
+\end{itemize}
+
+\entrywithrightfloating{Rust computational genomics library}{\url{https://github.com/jc65536/cs-c122}}
+
+\begin{itemize}
+  \item
+  Implemented Burrows-Wheeler Transform, bloom filters, read mapping, genome
   assembly, summit prediction, and more algorithms from scratch in Rust
 \end{itemize}
 
-\daterange{Java to RISC-V compiler}{\url{https://github.com/jc65536/cs-132}}
+\entrywithrightfloating{Java to RISC-V compiler}{\url{https://github.com/jc65536/cs-132}}
 
 \begin{itemize}
   \item
@@ -163,7 +197,7 @@ Wind River / Alameda, CA \hfill 06/2022 -- 09/2022
   accesses than linear allocation algorithm
 \end{itemize}
 
-% \daterange{TRAINER}{2021}
+% \entrywithrightfloating{TRAINER}{2021}
 
 % Exercise assistant to count workout reps
 
@@ -173,22 +207,22 @@ Wind River / Alameda, CA \hfill 06/2022 -- 09/2022
 %   stream
 % \end{itemize}
 
-\sectioncolor{Awards}{indigo}
+% \sectioncolor{Awards}{indigo}
 
-\begin{itemize}
-  \item
-  2020 American Invitational Mathematics Examination top 15\%
+% \begin{itemize}
+%   \item
+%   2020 American Invitational Mathematics Examination top 15\%
 
-  \item
-  USA Computing Olympiad Silver Division
-\end{itemize}
+%   \item
+%   USA Computing Olympiad Silver Division
+% \end{itemize}
 
 \sectioncolor{Skills}{red}
 
 \begin{itemize}
-  \item Programming languages: Python, JavaScript, Rust, Java, C, C++, SQL
-  \item Frameworks: Pytorch, Next.js, React, Svelte, Django, Qiskit
-  \item Platforms: Github, GCP, BigQuery, AWS, Trainium, DigitalOcean, Kubernetes
+  \item Programming languages: Python, Java, JavaScript, Rust, C, C++, SQL
+  \item Frameworks: Spring Boot, Pytorch, Next.js, React, Svelte, Django, Qiskit, OpenRewrite
+  \item Other: GitHub, GCP, BigQuery, AWS, Docker, Kubernetes, Bazel
 \end{itemize}
 
 \end{document}
