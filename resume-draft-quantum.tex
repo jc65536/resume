@@ -1,0 +1,194 @@
+\documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{mlmodern}
+\usepackage[skip=0.5ex]{parskip}
+\usepackage{mathdefs}
+\usepackage{multicol}
+
+\definecolor{gold}{HTML}{ffbf00}
+\definecolor{blue}{HTML}{2a6099}
+\definecolor{green}{HTML}{00a933}
+\definecolor{red}{HTML}{ff0000}
+\definecolor{indigo}{HTML}{55308d}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\titleformat{\section}
+  {\large\scshape}{}{}{}
+  [\titleline{\color{rule_color}\titlerule[1pt]}]
+
+\titlespacing{\section}{0pt}{*2}{*1.5}
+
+\titleformat{\subsection}[runin]{\normalsize\bfseries}{}{}{}
+
+\titlespacing{\subsection}{0pt}{*1.5}{*1}
+
+\setlist{itemsep=0.2ex, topsep=0.5ex, parsep=0.5ex}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\NewDocumentCommand{\daterange}{mmo}{\subsection*{#1}\hfill#2\IfValueT{#3}{ -- #3}}
+\newcommand{\sectioncolor}[2]{\colorlet{rule_color}{#2}\section*{#1}}
+
+\begin{center}
+  % \setlength{\parskip}{1ex}
+
+  \Large \textbf{Pinran (Jason) Cheng}
+
+  \normalsize
+  \href{tel:+1-669-264-7155}{(669) 264-7155} |
+  \href{mailto:jasoncheng224+work@gmail.com}{jasoncheng224+work@gmail.com} |
+  \href{https://www.linkedin.com/in/pinran-cheng/}{linkedin.com/in/pinran-cheng} |
+  \href{https://github.com/jc65536}{github.com/jc65536} |
+  \href{https://pcheng.cc/}{pcheng.cc}
+\end{center}
+
+\sectioncolor{Education}{gold}
+
+\daterange{Computer Science M.S.}{09/2025}[06/2026]
+
+University of California, Los Angeles / Los Angeles, CA
+
+\daterange{Computer Science B.S., Mathematics minor}{09/2021}[06/2025]
+
+University of California, Los Angeles / Los Angeles, CA
+
+\begin{itemize}
+  \item GPA: 3.97
+
+  \item
+  Coursework:
+
+  \setlength{\multicolsep}{0.7ex}
+  \begin{multicols}{3}
+    Quantum Programming
+
+    Quantum Algorithms
+
+    Linear Algebra
+
+    Probability and Statistics
+
+    Systems and Signals
+
+    Digital Signal Processing
+  \end{multicols}
+\end{itemize}
+
+
+\sectioncolor{Projects}{green}
+
+\daterange{Quantum simulator}{Fall 2024}
+
+\url{https://github.com/jc65536/quantum-simulator}
+
+\begin{itemize}
+  \item
+  A QASM simulator for the limited gate set \( \set{H, X, T, C(X)} \), written from scratch in Rust
+
+  \item
+  Simulates up to 20 qubits in mere seconds
+\end{itemize}
+
+\daterange{QAOA demo}{Fall 2024}
+
+\url{https://github.com/jc65536/qaoa-demo}
+
+\begin{itemize}
+  \item
+  Implements the QAOA algorithm for Max2SAT
+
+  \item
+  Experimented with various problem sizes on perfect and noisy simulators using
+  Qiskit
+\end{itemize}
+
+\daterange{Eigensolver}{Winter 2025}
+
+\url{https://github.com/jc65536/eigensolver}
+
+\begin{itemize}
+  \item
+  A quantum eigensolver based on the paper "Variational Quantum State
+  Eigensolver" (Cerezo et al. 2020)
+
+  \item
+  The overview is that it optimizes parameters for an ansatz circuit using
+  gradient descent
+
+  \item
+  Obtains eigenvectors with 97\% accuracy for \( 16 \times 16 \) matrices (don't
+  ask about runtime)
+\end{itemize}
+
+\daterange{Approximate Toffoli}{Winter 2025}
+
+\url{https://github.com/jc65536/approx-toffoli}
+
+\begin{itemize}
+  \item
+  Approximates \( CC(X) \) while only using five \( C(X) \) gates and any number
+  of 1-qubit gates
+
+  \item
+  Using gradient descent, achieved the ``optimal'' closeness of 0.382683
+\end{itemize}
+
+
+\sectioncolor{Experience}{blue}
+
+\daterange{Data Lake Software Engineering Intern}{06/2024}[09/2024]
+
+Recursion / Salt Lake City, UT
+
+\begin{itemize}
+  \item
+  Developed and deployed seltzer, a data quality framework in Python based on
+  Soda Core
+
+  \item
+  Ensured schema consistency and data freshness for lab data which was being
+  migrated from OracleDB to BigQuery
+
+  \item
+  Improved data quality observability and alerting by integrating with Atlan
+  data catalog and Slack API
+\end{itemize}
+
+\daterange{VxWorks Intern}{2022}[2023]
+
+Wind River / Alameda, CA
+
+\begin{itemize}
+  \item
+  Developed tests in C for VxWorks message queue component for attaining
+  aerospace systems certification
+
+  \item
+  Implemented secure, POSIX-compliant pthread APIs and corresponding regression
+  tests in C
+\end{itemize}
+
+
+\sectioncolor{Awards}{indigo}
+
+\begin{itemize}
+  \item
+  2025 BlueQubit Quantum Hackathon 91st place (out of 1603)---peaked circuit simulation
+
+  \item
+  2020 American Invitational Mathematics Examination top 15\%
+
+  \item
+  USA Computing Olympiad Silver Division
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,162 @@
+\documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{mlmodern}
+
+\definecolor{gold}{HTML}{ffbf00}
+\definecolor{blue}{HTML}{2a6099}
+\definecolor{green}{HTML}{00a933}
+\definecolor{red}{HTML}{ff0000}
+\definecolor{indigo}{HTML}{55308d}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+}
+
+\titleformat{\section}
+  {\large\bfseries}{}{}{}
+  [\titleline{\color{rule_color}\titlerule[1pt]}]
+
+\titlespacing{\section}{0pt}{*3}{*2}
+
+\titleformat{\subsection}[runin]{\normalsize\bfseries}{}{}{}
+\titlespacing{\subsection}{0pt}{*2}{*1.5}
+
+\pagenumbering{gobble}
+
+\setlist{itemsep=0.5ex, topsep=0.5ex, parsep=0.5ex}
+\setlength{\parskip}{0ex}
+
+\begin{document}
+
+\begin{center}
+  \setlength{\parskip}{4pt}
+
+  \Large \textbf{Pinran (Jason) Cheng}
+
+  \normalsize
+  \href{tel:+1-669-264-7155}{(669) 264-7155} $|$
+  \href{mailto:jasoncheng224@gmail.com}{jasoncheng224@gmail.com} $|$
+  \href{https://www.linkedin.com/in/pinran-cheng/}{linkedin.com/in/pinran-cheng} $|$
+  \href{https://github.com/jc65536}{github.com/jc65536} $|$
+  \href{https://jcfp.site/}{jcfp.site}
+\end{center}
+
+\colorlet{rule_color}{gold}
+\section*{Education}
+
+\subsection*{University of California, Los Angeles}
+\hfill Sept. 2021 -- June 2025
+\begin{itemize}
+  \item Bachelor of Science in Computer Science
+
+  \item GPA: 3.98
+
+  \item Coursework: data structures/algorithms, software construction,
+        operating systems, signal processing, formal languages, compiler
+        construction, computer vision, calculus, linear algebra, probability
+
+  \item Clubs: CS honor society Upsilon Pi Epsilon officer, Association of
+        Computing Machinery Rustaceans initiative officer
+\end{itemize}
+
+\colorlet{rule_color}{blue}
+\section*{Experience}
+
+\subsection*{UCLA} Undergraduate Research
+\hfill Sept 2023 -- Present
+\begin{itemize}
+  \item Read research papers about weak memory models, Kleene algebra with
+        tests, and e-graphs
+
+  \item Collaborating with a graduate student to create a tool to generate weak
+        memory models from litmus tests
+\end{itemize}
+
+\subsection*{Wind River} Software Engineering Intern
+\hfill June 2023 -- Sept. 2023
+\begin{itemize}
+  \item Implemented two secure, POSIX-compliant pthread APIs and their
+        regression tests in C for VxWorks OS
+
+  \item Ported a Transport-Independent RPC library to VxWorks; learned about
+        Make build systems and C compilation/linking
+\end{itemize}
+
+\subsection*{Wind River} Software Engineering Intern
+\hfill June 2022 -- Sept. 2022
+\begin{itemize}
+  \item Developed tests in C for VxWorks message queue component in order to
+        achieve aerospace systems certification
+
+  \item Used table-driven programming to implement reuseable tests and achieved
+        100\% MC/DC coverage for all APIs
+
+  \item Extensively documented environment setup, test framework usage, and
+        troubleshooting tips for future Cert developers
+\end{itemize}
+
+\subsection*{Daily Bruin} Full Stack Software Engineer
+\hfill Oct. 2021 -- Present
+\begin{itemize}
+  \item Implemented redesigns and significantly simplified the code of the
+        homepage and professor pages using Django, Javascript, and CSS on
+        \href{https://bruinwalk.com/}{bruinwalk.com,} a professor rating site
+        used by over 18k UCLA students
+
+  \item Organized a web auditing competition and deployed infrastructure
+        (Kubernetes, PostgreSQL) for vulnerability testing
+
+  \item Patched a vulnerability found during said audit that threatened denial
+        of service of user email verification
+\end{itemize}
+
+\colorlet{rule_color}{green}
+\section*{Projects}
+
+\subsection*{MiniJava} Compiler for a subset of Java into RISC-V, written in
+                       functional-style Java
+\begin{itemize}
+      \item Designed an aggressive register allocator that achieves over 60\%
+            fewer memory accesses than the linear allocation algorithm used in
+            the official solution
+\end{itemize}
+
+\subsection*{TRAINER} React Native exercise assistant to count workout reps
+\begin{itemize}
+  \item Trained the TensorFlow OpenPose AI model and used it to classify
+        workouts from a live video stream
+
+  \item CincyHacks 2021 ``Most Popular'' winner (out of 17 teams)
+\end{itemize}
+
+\colorlet{rule_color}{indigo}
+\section*{Awards}
+
+\begin{itemize}
+  \item 2020 American Invitational Mathematics Examination top 15\%
+
+  \item USA Computing Olympiad Silver Division
+
+  \item 3 times placed on the Deans Honor List for superior academic achievement
+\end{itemize}
+
+\colorlet{rule_color}{red}
+\section*{Skills}
+
+\begin{itemize}
+  \item Programming languages: C, C++, Rust, OCaml, Java, Prolog, Python,
+        JavaScript, Perl, Bash
+
+  \item Tools/frameworks: HTML, CSS, Git, Linux, Django, React, Docker,
+        Kubernetes, LaTeX, Make
+
+  \item Languages: English, Mandarin Chinese
+\end{itemize}
+
+\end{document}

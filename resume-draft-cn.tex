@@ -1,0 +1,142 @@
+\documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{ctex}
+\usepackage{mlmodern}
+
+\definecolor{gold}{HTML}{ffbf00}
+\definecolor{blue}{HTML}{2a6099}
+\definecolor{green}{HTML}{00a933}
+\definecolor{red}{HTML}{ff0000}
+\definecolor{indigo}{HTML}{55308d}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+
+\titleformat{\section}
+  {\large\bfseries}{}{}{}
+  [\titleline{\color{rule_color}\titlerule[1pt]}]
+
+\titlespacing{\section}{0pt}{*2}{*1.5}
+
+\titleformat{\subsection}[runin]{\normalsize\bfseries}{}{}{}
+
+\titlespacing{\subsection}{0pt}{*1.5}{*1}
+
+\setlist{itemsep=0.2ex, topsep=0.5ex, parsep=0.5ex}
+
+\pagenumbering{gobble}
+
+\setlist{itemsep=0ex, topsep=0.5ex, parsep=0.5ex}
+\setlength{\parskip}{0ex}
+
+\begin{document}
+
+\titlespacing*{\section}{0pt}{1.5ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1ex}{1.5ex plus .2ex}
+
+\begin{center}
+  \setlength{\parskip}{6pt}
+
+  \Large \textbf{程品然 (Jason)}
+
+  \normalsize
+  \href{tel:+1-669-264-7155}{(669) 264-7155} $|$
+  \href{mailto:jasoncheng224+work@gmail.com}{jasoncheng224+work@gmail.com} $|$
+  \href{https://www.linkedin.com/in/pinran-cheng/}{linkedin.com/in/pinran-cheng} $|$
+  \href{https://github.com/jc65536}{github.com/jc65536} $|$
+  \href{https://jcfp.site/}{jcfp.site}
+\end{center}
+
+\colorlet{rule_color}{gold}
+\section*{学历}
+
+\subsection*{加州大学，洛杉矶分校（UCLA）}
+\hfill 2021 年 9 月 -- 2025 年 6 月
+\begin{itemize}
+  \item 专业：计算机科学（CS）
+
+  \item 课程：数据结构，算法，软件工程，操作系统，信号处理，网络，形式语言，编译器构造，人工智能，深度学习，电脑视觉
+
+  \item 俱乐部：CS 荣誉社会，计算机协会官员
+\end{itemize}
+
+\colorlet{rule_color}{blue}
+\section*{工作经历}
+
+\subsection*{Uber} 软件工程师
+\hfill 2025 年 10 月 -- 现在
+\begin{itemize}
+  \item 利用 OpenRewrite + AI 自动 refactor 了 60k+ 测试
+  \item 利用 Java 26 Ahead of Time (AOT) 功能解决了 startup CPU throttling 问题，提高了服务重启时的可靠性
+
+\end{itemize}
+
+\subsection*{Daily Bruin} 软件工程师
+\hfill 2021 年 10 月 -- 2024 年 10 月
+\begin{itemize}
+  \item 用 Django/Javascript/CSS 重新设计了学校附属教授评论网站
+        \href{https://bruinwalk.com/}{bruinwalk.com} 中的主页和评分页面， 这是一个超过 1 万 8 千名
+        UCLA 学生使用的网站
+
+  \item 组织了一次网络审计比赛并部署了虚拟基础设施用于端到端 漏洞测试
+\end{itemize}
+
+\subsection*{Wind River} 软件工程实习生
+\hfill 2022 年 6 月 -- 2022 年 9 月
+\begin{itemize}
+  \item 用C语言为 VxWorks 内核信息队列部件开发测试流程从而实现航空评级
+
+  \item 书写完备的测试文档，说明安装环境，Cert流程，故障排除技巧
+\end{itemize}
+
+% \subsection*{Major League Hacks} 开源研究员
+% \hfill 2022 年 1 月 -- 2022 年 4 月
+% \begin{itemize}
+%   \item 为Facebook的Android native debugger设计测试单元用以验证其可靠性
+
+%   \item 重构 Python 的 \verb/debug_bridge/ 模块从而减少引用，增加代码清晰度
+% \end{itemize}
+
+\colorlet{rule_color}{green}
+\section*{项目经验}
+
+\subsection*{TRAINER}
+\begin{itemize}
+  \item 训练 TensorFlow OpenPose AI 模块，用以分类相机图像
+
+  \item 赢得美国 CincyHacks 2021 最受欢迎奖（共有17个队伍参加）
+\end{itemize}
+
+\subsection*{Rust 项目} Command line utility for counting lines of text
+\begin{itemize}
+  \item 演示了 Rust 语言中的几种核心概念：记忆安全，多线程，遗传特性
+
+  \item 用并行文件技术提高了 12 倍以上的效率
+\end{itemize}
+
+\colorlet{rule_color}{indigo}
+\section*{奖项}
+
+\begin{itemize}
+  \item 2020 美国数学邀请赛前 15\%
+
+  \item 美国计算机奥林匹克银牌组
+\end{itemize}
+
+% \colorlet{rule_color}{red}
+% \section*{能力}
+
+% \begin{itemize}
+%   \item 编程语言：C, C++, Rust, OCaml, Java, Prolog, Python,
+%         JavaScript, Perl, Bash, HTML, CSS
+
+%   \item 工具/架构：Git, Linux, Django, React, Docker, Kubernetes, LaTeX
+
+%   \item 语言：English, Mandarin Chinese
+% \end{itemize}
+
+\end{document}
